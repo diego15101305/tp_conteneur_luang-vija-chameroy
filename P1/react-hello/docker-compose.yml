@@ -1,0 +1,9 @@
+version : "3.9"
+
+services :
+  react-hello:
+    image: react-hello:latest
+    container_name: my-react-container
+    ports:
+      - "3000:80"
+    restart: unless-stopped
